@@ -191,7 +191,7 @@ PAGE: PORTFOLIO
 
 #gallery li a:hover {
   text-decoration: underline;
-  color: #7c7c96;
+  color: #F5F4EE;
 }
 
 #gallery li a p {
@@ -199,7 +199,7 @@ PAGE: PORTFOLIO
   padding: 5%;
   font-size: 0.75em;
   /*color: #0B87D5;*/
-  color: #000;
+  color: #F5F4EE;
 }
 
 #gallery li .sharing {

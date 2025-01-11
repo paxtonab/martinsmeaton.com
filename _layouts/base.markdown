@@ -26,7 +26,7 @@ activeP: true
       <div class="clearfix"></div>
       <nav>
         <ul>
-          <li><a href="{{ '/gallery' | relative_url }}" {% if page.activeP %}class="selected"{% endif %}>GALLERY</a></li>
+          <li><a href="{{ '/gallery' | relative_url }}" {% if page.activeP %}class="selected"{% endif %}>FILM</a></li>
           <li><a href="{{ '/about' | relative_url }}" {% if page.activeA %}class="selected"{% endif %}>ABOUT</a></li>
           <li><a href="{{ '/contact' | relative_url }}" {% if page.activeC %}class="selected"{% endif %}>CONTACT</a></li>
         </ul>
