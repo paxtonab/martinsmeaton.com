@@ -34,6 +34,9 @@ collections:
   film_gallery:
     output: true
     permalink: /film/:name
+  project_gallery:
+    output: true
+    permalink: /project/:name
 
 # Exclude from processing.
 # The following items will not be processed, by default.

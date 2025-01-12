@@ -26,7 +26,8 @@ activeP: true
       <div class="clearfix"></div>
       <nav>
         <ul>
-          <li><a href="{{ '/gallery' | relative_url }}" {% if page.activeP %}class="selected"{% endif %}>FILM</a></li>
+          <li><a href="{{ '/film' | relative_url }}" {% if page.activeF %}class="selected"{% endif %}>FILM</a></li>
+          <li><a href="{{ '/projects' | relative_url }}" {% if page.activeP %}class="selected"{% endif %}>PROJECTS</a></li>
           <li><a href="{{ '/about' | relative_url }}" {% if page.activeA %}class="selected"{% endif %}>ABOUT</a></li>
           <li><a href="{{ '/contact' | relative_url }}" {% if page.activeC %}class="selected"{% endif %}>CONTACT</a></li>
         </ul>
@@ -34,7 +35,7 @@ activeP: true
     </header>
     <div id="wrapper">
       {{ content }}
-      {% include silver.markdown %}
+      {% include project.markdown %}
       <!-- stick footer-->
       <div class="push"></div>
     </div><!--/.wrapper-->
