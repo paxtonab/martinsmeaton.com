@@ -12,7 +12,7 @@ activeP: true
         <a href="{{ f.permalink | relative_url }}">
           <img src="{{ f.img_small | relative_url }}" alt="{{ f.title }}">
           <p>{{ f.title }}</p>
-          <p>{{ f.meta_description }}</p>
+          <p id="secondary">{{ f.meta_description }}</p>
         </a>
       </li>
     {% endfor %}
