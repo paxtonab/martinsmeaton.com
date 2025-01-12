@@ -7,7 +7,7 @@ meta_description: "Home of the artwork of Martin Smeaton, Sculptor."
 <section id="home-banner">
   <ul id="home-gallery">
       <li>
-        <a href="{{ '/' | relative_url }}">
+        <a href="{{ '/film' | relative_url }}">
           <img src="{{ '/assets/images/martin-smeaton-home.png' | relative_url }}" alt="Martin Smeaton Home"/>
         </a>
       </li>

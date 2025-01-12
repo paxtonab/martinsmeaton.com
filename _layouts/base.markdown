@@ -20,7 +20,7 @@ activeP: true
         <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Martin Smeaton Logo"/>
         <div id="name_home">
           <div id="logo_top"><h1>Martin Smeaton</h1></div>
-          <h2>Martin Smeaton</h2>
+          <h2>Commercial Figurative Sculptor</h2>
         </div>
       </a>
       <div class="clearfix"></div>
@@ -28,7 +28,7 @@ activeP: true
         <ul>
           <li><a href="{{ '/film' | relative_url }}" {% if page.activeF %}class="selected"{% endif %}>FILM</a></li>
           <li><a href="{{ '/projects' | relative_url }}" {% if page.activeP %}class="selected"{% endif %}>PROJECTS</a></li>
-          <li><a href="{{ '/about' | relative_url }}" {% if page.activeA %}class="selected"{% endif %}>ABOUT</a></li>
+          <li><a href="{{ '/cv' | relative_url }}" {% if page.activeA %}class="selected"{% endif %}>CV</a></li>
           <li><a href="{{ '/contact' | relative_url }}" {% if page.activeC %}class="selected"{% endif %}>CONTACT</a></li>
         </ul>
       </nav>
