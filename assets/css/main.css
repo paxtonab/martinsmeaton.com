@@ -198,8 +198,12 @@ PAGE: PORTFOLIO
   margin: 0;
   padding: 5%;
   font-size: 0.75em;
-  /*color: #0B87D5;*/
+  min-height: 0px;
   color: #F5F4EE;
+}
+
+#gallery li a p .secondary {
+  font-style: italic;
 }
 
 #gallery li .sharing {

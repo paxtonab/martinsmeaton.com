@@ -22,7 +22,7 @@ title: Martin Smeaton
 email: martinsmeaton@earthlink.net
 description: >- # this means to ignore newlines until "baseurl:"
   A commercial figurative sculptor working in film, theatre, casino and concept design.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/martinsmeaton.com" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
@@ -34,6 +34,9 @@ collections:
   film_gallery:
     output: true
     permalink: /film/:name
+  project_gallery:
+    output: true
+    permalink: /project/:name
 
 # Exclude from processing.
 # The following items will not be processed, by default.

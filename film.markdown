@@ -1,8 +1,8 @@
 ---
 layout: base
-title: "Gallery"
-meta_description: "Gallery of the works of Martin Smeaton."
-activeP: true
+title: "FILM"
+meta_description: "Gallery of the works of Martin Smeaton for film."
+activeF: true
 ---
 
   <section>
