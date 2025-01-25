@@ -9,17 +9,11 @@ html {
 }
 
 @font-face {
-  font-family: 'Brandon';
-  src: local('Brandon'), url('/assets/fonts/Brandon_light.otf') format("opentype");
-}
-
-@font-face {
-  font-family: 'miller';
-  src: local('miller'), url('/assets/fonts/miller.otf') format("opentype");
+  font-family: 'Libre Franklin', Arial, sans-serif;
 }
 
 body {
-  font-family: 'Brandon', sans-serif;
+  font-family: 'Libre Franklin', Arial, sans-serif;
   min-width: 350px;
   /*sticky footer*/
   height: 100%;
@@ -30,8 +24,8 @@ body {
   margin: 0 auto;
   padding: 0 5%;
   /*sticky footer*/
-  min-height: 100%;
-	margin: 0 auto -155px;
+  min-height: 70%;
+  margin: 0 auto -155px;
 }
 
 a {
@@ -48,7 +42,7 @@ img {
 
 h3 {
   margin: 0 0 1em 0;
-  font-family: 'Brandon', serif;
+  font-family: 'Libre Franklin', Arial, sans-serif;
 }
 
 
@@ -76,7 +70,7 @@ header {
 }
 
 h1 {
-  font-family: 'miller', serif;
+  font-family: 'Libre Franklin', Arial, sans-serif;
   margin: 0px;
   font-size: 1.5em;
   font-weight: lighter;
@@ -84,7 +78,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'miller', serif;
+  font-family: 'Libre Franklin', Arial, sans-serif;
   font-size: 0.75em;
   margin: -5px 0 0;
   font-weight: normal;
@@ -120,7 +114,7 @@ nav li {
 nav a {
   font-weight: 200;
   padding: 15px 10px;
-  font-family: 'Brandon', serif;
+  font-family: 'Libre Franklin', Arial, sans-serif;
 }
 
 
