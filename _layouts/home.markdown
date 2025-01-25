@@ -9,37 +9,143 @@ activeP: true
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     {% include meta.markdown %}
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ '/assets/css/normalize.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/responsive.css' | relative_url }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #1e1e1e;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1rem;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+        }
+
+        .hero img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .hero-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text a {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            color: white;
+            background-color: #e63946;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-text a:hover {
+            background-color: #d62828;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #1e1e1e;
+            margin-top: 1rem;
+        }
+
+        .footer img {
+            width: 50px;
+            height: auto;
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-text h1 {
+                font-size: 2rem;
+            }
+
+            .hero-text p {
+                font-size: 1rem;
+            }
+
+            .hero-text a {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .navbar a {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
   </head>
   <body>
-    <header style="background:none;border:none;margin-bottom:0px;">
-      <a href="{{ '/' | relative_url }}" id="logo_home" style="text-decoration:none;">
-        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Martin Smeaton Logo"/>
-        <div id="name_home">
-          <div id="logo_top"><h1>Martin Smeaton</h1></div>
-          <h2>Commercial Figurative Sculptor</h2>
+
+    <header class="navbar">
+        <div class="logo">
+            <a href="#">Martin Smeaton</a>
         </div>
-      </a>
-      <div class="clearfix"></div>
-      <nav>
-        <ul>
-          <li><a href="{{ '/film' | relative_url }}" {% if page.activeF %}class="selected"{% endif %}>FILM</a></li>
-          <li><a href="{{ '/projects' | relative_url }}" {% if page.activeP %}class="selected"{% endif %}>PROJECTS</a></li>
-          <li><a href="{{ '/cv' | relative_url }}" {% if page.activeA %}class="selected"{% endif %}>CV</a></li>
-          <li><a href="{{ '/contact' | relative_url }}" {% if page.activeC %}class="selected"{% endif %}>CONTACT</a></li>
-        </ul>
-      </nav>
+        <nav>
+            <a href="#film">Film</a>
+            <a href="#projects">Projects</a>
+            <a href="#cv">CV</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-    <div id="wrapper" style="max-width:100%; min-height:70%; padding:5% 5%;">
-      {{ content }}
-      {% include project.markdown %}
-      <!-- stick footer-->
-      <div class="push"></div>
-    </div><!--/.wrapper-->
+
+    <section class="hero">
+        <img src="{{ '/assets/images/martin-smeaton-home.png' | relative_url }}" alt="Sculpture">
+        <div class="hero-text">
+            <h1>Martin Smeaton</h1>
+            <p>Commercial Figurative Sculptor</p>
+            <a href="#work">Work</a>
+        </div>
+    </section>
+
     <footer>
       <p>&copy; {{ 'now' | date: "%Y" }} Martin Smeaton</p>
       <a href="{{ '/contact' | relative_url }}"><img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Martin Smeaton Logo" class="social-icon"></a>
