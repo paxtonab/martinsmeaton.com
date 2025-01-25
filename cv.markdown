@@ -7,7 +7,6 @@ activeA: true
 ---
 
   <section style="clear:both; max-width: 740px; margin: 0px auto;">
-    <img src="{{ '/assets/images/robert-a-butler-silversmith.jpg' | relative_url }}" alt="Martin Smeaton, Sculptor" class="profile-photo">
     <h3>Martin Smeaton, CV</h3>
     <h4>Film</h4>
     <ul>

@@ -7,4 +7,5 @@ img: "https://static.wixstatic.com/media/182170_d3df25197b8a487d9ba1dcba2a0c7c11
 img_small: "https://static.wixstatic.com/media/182170_d3df25197b8a487d9ba1dcba2a0c7c11~mv2.jpg"
 permalink: "/film/the-great-sphinx"
 index: 16
+display: "false"
 ---

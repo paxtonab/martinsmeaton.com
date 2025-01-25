@@ -8,13 +8,14 @@ activeF: true
   <section>
     <ul id="gallery">
     {% for f in site.film_gallery %}
+      {% if f.display != "false" %}
       <li>
         <a href="{{ f.permalink | relative_url }}">
-          <img src="{{ f.img_small | relative_url }}" alt="{{ f.title }}">
-          <p>{{ f.title }}</p>
-          <p>{{ f.meta_description }}</p>
+          <img src="/assets/images/{{ f.img_small | relative_url }}" alt="{{ f.title }}">
+          <p>{{ f.title }} - {{ f.meta_description }}</p>
         </a>
       </li>
+      {% endif %}
     {% endfor %}
     </ul>
   </section>
